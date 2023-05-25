@@ -1,0 +1,29 @@
+{
+  "name": "MyPipeline",
+  "properties": {
+    "activities": [
+      {
+        "name": "MyActivity",
+        "type": "Copy",
+        "inputs": [
+          {
+            "name": "MyDataset"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "MyOutput"
+          }
+        ],
+        "typeProperties": {
+          "source": {
+            "type": "BlobSource"
+          },
+          "sink": {
+            "type": "BlobSink"
+          }
+        }
+      }
+    ]
+  }
+}
